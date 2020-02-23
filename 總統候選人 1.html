@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+</head>
+
+<body>
+<h2>按鍵產生總統選人</h2>
+
+
+
+<p id = "e">	
+
+</p>
+
+<script type="text/javascript">
+function printf(){
+	var hr = document.createElement("hr");
+	
+	var word = document.createElement("h1");
+	var worddata = document.createTextNode("109年中華民國總統候選人");
+	
+	var fir = document.createElement("p");
+	var firdata = document.createTextNode("1. 宋楚瑜456");
+	
+	var sec = document.createElement("p");
+	var secdata = document.createTextNode("2. 韓國瑜789");
+	 
+	var thr = document.createElement("p");
+	var thrdata = document.createTextNode("3. 蔡英文");	
+	
+	fir.appendChild(firdata);
+	sec.appendChild(secdata);
+	thr.appendChild(thrdata);
+	word.appendChild(worddata);
+	
+	document.body.appendChild(hr);
+	document.body.appendChild(word);	
+	document.body.appendChild(fir);
+	document.body.appendChild(sec);
+	document.body.appendChild(thr);
+	
+}  
+
+
+
+</script>
+
+<input type="button" value=按我 onClick="printf()">
+<div id="content"></div>
+
+</body>
+</html>
